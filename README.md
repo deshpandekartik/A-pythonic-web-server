@@ -9,6 +9,42 @@ thread created for each client request.
 3. Server's access log shows client IP, client port and number of times a particular file
 was accessed.
 
+
+Sample input / Output
+
+Input
+
+```
+1.
+kdeshpa3@remote06:~/distributedNetworks/kdeshpa3-p1$ wget remote06.cs.binghamton.edu:10000/index.html
+--2017-09-19 20:25:47--  http://remote06.cs.binghamton.edu:10000/index.html
+Resolving remote06.cs.binghamton.edu (remote06.cs.binghamton.edu)... 128.226.180.168
+Connecting to remote06.cs.binghamton.edu (remote06.cs.binghamton.edu)|128.226.180.168|:10000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 97 [text/html]
+Saving to: 'index.html1'
+index.html1                              100%[=====================================================================================>]      97  --.-KB/s    in 0s
+2017-09-19 20:25:47 (10.4 MB/s) - 'index.html.1' saved [97/97]
+
+2.
+➜  localhost:10000/sample.html
+<html>
+<head>
+<title>File Not Found</title>
+</head>
+<body>
+<center><b>The requested file could not be found</b></center>
+</body>
+</html>
+
+
+
+```
+
+Server access log
+
+
+
 References
 1. Socket programming - https://docs.python.org/2/howto/sockets.html
 2. Accepting,binding and closing socket connections - https://docs.python.org/3/library/socket.html#socket.socket.accept
