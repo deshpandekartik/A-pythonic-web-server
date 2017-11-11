@@ -9,6 +9,10 @@ thread created for each client request.
 3. Server's access log shows client IP, client port and number of times a particular file
 was accessed.
 
+To start pythonic-web-server-:
+
+1. Create www directory ( mkdir www ) and place sample html files into it. 
+2. python server.py 80
 
 Sample input / Output
 
@@ -41,7 +45,17 @@ index.html1                              100%[==================================
 
 ```
 
-Server access log
+Output Server access log ( Format : filename | client IP  | client port | access count )
+
+```
+index.html|127.0.0.1|59630|1
+test.html|127.0.0.1|59632|1
+test.html|127.0.0.1|59634|2
+sample.html|127.0.0.1|59636|1
+test/folder.html|127.0.0.1|59644|1
+test/activa.jpg|127.0.0.1|59646|1
+
+```
 
 
 
