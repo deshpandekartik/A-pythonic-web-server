@@ -57,14 +57,15 @@ test.html|127.0.0.1|59634|2
 sample.html|127.0.0.1|59636|1
 test/folder.html|127.0.0.1|59644|1
 test/activa.jpg|127.0.0.1|59646|1
-
 ```
-
-
-
-References
+## References
 1. Socket programming - https://docs.python.org/2/howto/sockets.html
 2. Accepting,binding and closing socket connections - https://docs.python.org/3/library/socket.html#socket.socket.accept
 3. Multithreading - https://www.tutorialspoint.com/python/python_multithreading.htm
 4. Last modification time - https://docs.python.org/3/library/os.path.html#os.path.getmtime
 5. HTTP headers - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+
+### Contact
+
+[Kartik Deshpande](https://www.linkedin.com/in/kartik-deshpande/)
+
