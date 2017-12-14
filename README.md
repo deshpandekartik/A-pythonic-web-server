@@ -1,25 +1,28 @@
 # A-pythonic-web-server
 A multi-threaded HTTP server written in python that accepts HTTP GET requests and returns the desired content to the client
 
+## Summary
+
 Functions.
-1. Creates a TCP server socket to listen for incoming TCP connections from clients and
+- Creates a TCP server socket to listen for incoming TCP connections from clients and
 establishes a TCP connection.
-2. For better throughput different requests are handled by different threads, with a new
+- For better throughput different requests are handled by different threads, with a new
 thread created for each client request.
-3. Server's access log shows client IP, client port and number of times a particular file
+- Server's access log shows client IP, client port and number of times a particular file
 was accessed.
+
+## Getting Started
 
 To start pythonic-web-server-:
 
-1. Create www directory ( mkdir www ) and place sample html files into it. 
-2. python server.py 80
+- Create www directory ( mkdir www ) and place sample html files into it. 
+- python server.py 80
 
 Sample input / Output
 
 Input
 
 ```
-1.
 kdeshpa3@remote06:~/distributedNetworks/kdeshpa3-p1$ wget remote06.cs.binghamton.edu:10000/index.html
 --2017-09-19 20:25:47--  http://remote06.cs.binghamton.edu:10000/index.html
 Resolving remote06.cs.binghamton.edu (remote06.cs.binghamton.edu)... 128.226.180.168
@@ -30,7 +33,7 @@ Saving to: 'index.html1'
 index.html1                              100%[=====================================================================================>]      97  --.-KB/s    in 0s
 2017-09-19 20:25:47 (10.4 MB/s) - 'index.html.1' saved [97/97]
 
-2.
+
 ➜  localhost:10000/sample.html
 <html>
 <head>
